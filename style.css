@@ -1,0 +1,121 @@
+html {
+    scroll-behavior: smooth;
+}
+body{
+    background: #363c47;
+}
+nav{
+    position: fixed;
+    background-color: #47679b;
+    width: 100%;
+    height: 60px;
+    top: 0px;
+    z-index: 10;
+}
+a:link {color: #ffffff;}
+a:visited {color: #ffffff;}
+a:hover {color: #93afbf;}
+a:active {color: #93afbf;}
+li{
+    display: inline;
+    color: #c9c0bc;
+    font-size: 1.5rem;
+    margin: 0 18px;
+}
+#introduction{
+    width: 100%;
+    height: 472px;
+    position: relative;
+    text-align: center;
+    background-color: #132645;
+    padding-top: 250px;
+    color: #ffffff;
+}
+body{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+#hi{
+    font-style: normal;
+    font-size: 4.4rem;
+    margin-bottom: 0;
+}
+#job{
+    font-style: italic;
+    font-size: 2rem;
+    margin-top: 5px;
+}
+ul{
+    padding: 0px 80px;
+    float: right;
+    line-height: 60px;
+    margin: 0 auto;
+    height: 60px;
+}
+img{
+    width: 380px;
+    height: 390px;
+    object-fit: cover;
+}
+
+#portfolio{
+    height: 1200px;
+}
+a.projects{
+    display: flex;
+    width: 380px;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+h3.projectName{
+    display: block;
+    text-align: center;
+    background: #47679b;
+    margin-top: 0;
+    height: 65px;
+    line-height: 65px;
+}
+#all-projects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+#intro{
+    text-align: center;
+    font-size: 2.7rem;
+    padding-top: 60px;
+    text-decoration: underline;
+    color:#ffffff;
+}
+#info{
+    background: #132645;
+    padding: 150px 0px 198.24px 0px;
+}
+#work{
+    font-size: 4.5rem;
+    text-align: center;
+    color: #ffffff;
+}
+a{
+    height: 480px;
+    text-decoration: none;
+}
+a.links{  
+    font-size: 2.2rem;
+    margin: 20px;
+}
+#contacts{
+    margin:0 auto;
+    text-align: center;
+}
+#more-info{
+    background: #363c47;
+    color: #ffffff;
+    height: 80px;
+    padding: 18.72px 20px 10px 60px;
+}
+#mail{
+    margin-top: 0;
+    color: #ffffff;
+}
