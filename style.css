@@ -1,0 +1,361 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+#welcome {
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  background-image: url("newimg (1).jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+#welcome #welcome-text {
+  font-family: 'Comfortaa', cursive;
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 200px;
+  color: white;
+}
+
+#welcome #name {
+  margin: 0;
+}
+
+#welcome #favorite {
+  margin-top: 20px;
+}
+
+#nav-bar {
+  position: absolute;
+  z-index: 2;
+  font-size: 1.7rem;
+  width: 100%;
+  margin: 0;
+  top: 0;
+  left: 0;
+}
+
+#nav-bar ul {
+  list-style: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#nav-bar ul li.right {
+  float: right;
+  width: 100px;
+  height: 40px;
+  margin: 0;
+  padding: 8px 6px;
+  text-align: center;
+  color: white;
+}
+
+#nav-bar ul li.left {
+  float: left;
+  margin-left: 30px;
+  padding: 8px 6px;
+}
+
+#nav-bar ul a {
+  text-decoration: none;
+}
+
+#nav-bar ul a:link, #nav-bar ul a:visited, #nav-bar ul a:active {
+  color: #ffca7b;
+}
+
+#nav-bar ul a:hover {
+  color: #b39d7e;
+}
+
+#skill {
+  font-family: 'Comfortaa', cursive;
+  top: 100vh;
+  left: 0;
+  right: 0;
+  font-size: 1.5rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 70px auto;
+}
+
+#skill h2 {
+  font-family: 'Comfortaa', cursive;
+  text-align: center;
+}
+
+#skill .row {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 30px auto;
+  position: relative;
+}
+
+#skill .row p {
+  margin: 0 30px;
+  width: 140px;
+  color: #ff9900;
+}
+
+#skill .full {
+  width: 660px;
+  height: 30px;
+  background: #948f8f;
+  border-radius: 25px;
+}
+
+#skill #html-bar, #skill #css-bar, #skill #js-bar, #skill #react-bar, #skill #bootstrap-bar, #skill #sass-bar, #skill #english-bar {
+  position: absolute;
+  left: 200px;
+  height: 30px;
+  background: #f3af48;
+  border-radius: 25px;
+}
+
+#skill #html-bar {
+  width: 627px;
+}
+
+#skill #css-bar {
+  width: 594px;
+}
+
+#skill #js-bar {
+  width: 594px;
+}
+
+#skill #react-bar {
+  width: 528px;
+}
+
+#skill #bootstrap-bar {
+  width: 561px;
+}
+
+#skill #sass-bar {
+  width: 528px;
+}
+
+#skill #english-bar {
+  width: 528px;
+}
+
+#all-projects {
+  font-family: 'Comfortaa', cursive;
+  padding: 20px 0 30px 0;
+  width: 100%;
+  background: #ffca7b;
+  font-size: 1.6rem;
+}
+
+#all-projects #project-itd {
+  text-align: center;
+}
+
+#all-projects #project-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#all-projects #project-group a:link, #all-projects #project-group a:visited, #all-projects #project-group a:active {
+  color: #ffca7b;
+}
+
+#all-projects #project-group a:hover {
+  color: #b39d7e;
+}
+
+#all-projects .projects {
+  width: 400px;
+  height: 450px;
+  position: relative;
+  -webkit-transition-duration: .3s;
+          transition-duration: .3s;
+}
+
+#all-projects .projects:hover {
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+
+#all-projects .projects img {
+  width: 100%;
+  height: 360px;
+  display: block;
+}
+
+#all-projects .projects .project-name {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  height: 50px;
+  background: #81807d;
+  margin-top: 0;
+  padding-top: 13px;
+}
+
+#work {
+  top: 344vh;
+  right: 0;
+  font-size: 1.9rem;
+  margin: 20px auto;
+  text-align: center;
+  width: 100%;
+  font-family: 'Comfortaa', cursive;
+}
+
+#work a:link, #work a:active, #work a:visited {
+  color: black;
+}
+
+#work .social-network {
+  display: inline-block;
+  margin: 20px;
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
+}
+
+#work .social-network:hover {
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+
+#footer {
+  font-size: 1.4rem;
+  right: 0;
+  top: 384vh;
+  background: #ffca7b;
+  width: 100%;
+  left: 0;
+}
+
+#footer .contact {
+  padding-left: 30px;
+  line-height: 5vh;
+}
+
+#button {
+  font-size: 3rem;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+
+#button a:link, #button a:active, #button a:visited {
+  color: black;
+}
+
+#button a:hover {
+  background: #6e6d6d;
+}
+
+@media only screen and (max-width: 1100px) {
+  #welcome {
+    height: 70vh;
+  }
+  #welcome #welcome-text {
+    font-size: 1.7rem;
+  }
+  #nav-bar {
+    font-size: 1.4rem;
+  }
+  #nav-bar ul li.left {
+    margin-left: 0;
+  }
+  #skill {
+    font-size: 1.4rem;
+  }
+  #skill .row p {
+    width: 100px;
+  }
+  #skill .full {
+    width: 400px;
+    height: 20px;
+  }
+  #skill #html-bar, #skill #css-bar, #skill #js-bar, #skill #react-bar, #skill #bootstrap-bar, #skill #sass-bar, #skill #english-bar {
+    left: 160px;
+    height: 20px;
+  }
+  #skill #html-bar {
+    width: 380px;
+  }
+  #skill #css-bar {
+    width: 360px;
+  }
+  #skill #js-bar {
+    width: 360px;
+  }
+  #skill #react-bar {
+    width: 320px;
+  }
+  #skill #bootstrap-bar {
+    width: 340px;
+  }
+  #skill #sass-bar {
+    width: 320px;
+  }
+  #skill #english-bar {
+    width: 320px;
+  }
+  #all-projects {
+    padding-bottom: 0;
+    font-size: 1.4rem;
+  }
+  #all-projects .projects {
+    width: 280px;
+    height: 270px;
+    margin-bottom: 80px;
+  }
+  #all-projects .projects img {
+    height: 216px;
+  }
+  #all-projects .projects .project-name {
+    height: 54px;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  #all-projects {
+    padding-bottom: 0;
+    font-size: 1.3rem;
+  }
+  #all-projects .projects {
+    width: 280px;
+    height: 270px;
+  }
+  #all-projects .projects .project-name {
+    height: 45px;
+  }
+}
+/*# sourceMappingURL=PersonalPortfolio.css.map */
