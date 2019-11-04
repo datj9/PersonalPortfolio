@@ -1,0 +1,313 @@
+$desktop-bar: 660px;
+$phone-bar: 400px;
+$project-width: 400px;
+$project-height: 450px;
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+#welcome{
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    background-image: url("newimg (1).jpg");
+    background-position: center;
+    background-size: cover;
+    #welcome-text{
+        font-family: 'Comfortaa', cursive;
+        font-size: 2rem;
+        text-align: center;
+        padding-top: 200px;
+        color: rgb(255, 255, 255);
+
+    }
+    #name{
+        margin:0;
+    }
+    #favorite{
+        margin-top: 20px;
+    }
+}
+#nav-bar{
+    position: absolute;
+    z-index: 2;
+    font-size: 1.7rem;
+    width: 100%;
+    margin: 0;
+    top: 0;
+    left: 0;
+    ul{
+        list-style: none;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        li.right{
+            float: right;
+            width: 100px;
+            height: 40px;
+            margin: 0;
+            padding: 8px 6px;
+            text-align: center;
+            color: white;
+        }
+        li.left{
+            float: left;
+            margin-left: 30px;
+            padding: 8px 6px;
+        }
+        a{
+            text-decoration: none;
+            &:link,&:visited,&:active{
+                color: #ffca7b;
+            }
+            &:hover{
+                color: #b39d7e;
+            }
+        }
+    }
+}
+#skill{
+    font-family: 'Comfortaa', cursive;
+    top: 100vh;
+    left: 0;
+    right: 0;
+    font-size: 1.5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 70px auto;
+    h2 {
+        font-family: 'Comfortaa', cursive;
+        text-align: center;
+    }
+    .row{
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        margin: 30px auto;
+        position: relative;
+        p{
+            margin: 0 30px;
+            width: 140px;
+            color: #ff9900;
+        }
+    }
+    .full{
+        width: $desktop-bar;
+        height: 30px;
+        background: rgb(148, 143, 143);
+        border-radius: 25px;
+    }
+    #html-bar,#css-bar,#js-bar,#react-bar,#bootstrap-bar,#sass-bar,#english-bar{
+        position: absolute;
+        left: 200px;
+        height: 30px;
+        background: #f3af48;
+        border-radius: 25px;
+    }
+    #html-bar{
+        width: 0.95*$desktop-bar;
+    }
+    #css-bar{
+        width: 0.9*$desktop-bar;
+    }
+    #js-bar{
+        width: 0.9*$desktop-bar;
+    }
+    #react-bar{
+        width: 0.8*$desktop-bar;
+    }
+    #bootstrap-bar{
+        width: 0.85*$desktop-bar;
+    }
+    #sass-bar{
+        width: 0.8*$desktop-bar;
+    }
+    #english-bar{
+        width: 0.8*$desktop-bar;
+    }
+}
+#all-projects{
+    font-family: 'Comfortaa', cursive;
+    padding: 20px 0 30px 0;
+    width: 100%;
+    background: #ffca7b;
+    font-size: 1.6rem;
+    #project-itd{
+        text-align: center;
+    }
+    #project-group{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        a{
+            &:link,&:visited,&:active{
+                color: #ffca7b;
+            }
+            &:hover{
+                color: #b39d7e;
+            }
+        }
+    }
+    .projects{  
+        width: $project-width;
+        height: $project-height;
+        position: relative;
+        transition-duration: .3s;;
+        &:hover{
+            transform: scale(1.1,1.1);
+        }
+        img{
+            width: 100%;
+            height: $project-height*0.8;
+            display: block;
+        }
+        .project-name{
+            position: absolute;
+            text-align: center;
+            width: 100%;
+            height: $project-height/9;
+            background: #81807d;
+            margin-top:0;
+            padding-top: 13px;
+            
+        }
+    }
+}
+#work{
+    top: 344vh;
+    right: 0;
+    font-size: 1.9rem;
+    margin: 20px auto;
+    text-align: center;
+    width: 100%;
+    font-family: 'Comfortaa', cursive;
+    a{
+        &:link,&:active,&:visited{
+            color: black;
+        }
+    }
+    .social-network{
+        display: inline-block;
+        margin: 20px;
+        transition-duration: .2s;
+        &:hover{
+            transform: scale(1.1,1.1);
+        }
+    }
+}
+#footer{
+    font-size: 1.4rem;
+    right: 0;
+    top: 384vh;
+    background: #ffca7b;
+    width: 100%;
+    left: 0;
+    .contact{
+        padding-left: 30px;
+        line-height: 5vh;
+    }
+}
+#button{
+    a{
+        &:link,&:active,&:visited{
+            color: black;
+        }
+        &:hover{
+            background: rgb(110, 109, 109);
+        }
+    }
+        font-size: 3rem;
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+}
+
+@media only screen and (max-width: 1100px) {
+    #welcome{
+        height: 70vh;
+        #welcome-text{
+            font-size: 1.7rem;
+        }
+    }
+    #nav-bar{
+        font-size: 1.4rem;
+        ul{
+            li.left{
+                margin-left: 0;
+            }
+        }
+    }
+    #skill{
+        font-size: 1.4rem;
+        .row{
+            p{
+                width: 100px;
+            }
+        }
+        .full{
+            width: $phone-bar;
+            height: 20px;
+        }
+        #html-bar,#css-bar,#js-bar,#react-bar,#bootstrap-bar,#sass-bar,#english-bar{
+            left: 160px;
+            height: 20px;
+        }
+        #html-bar{
+            width: 0.95*$phone-bar;
+        }
+        #css-bar{
+            width: 0.9*$phone-bar;
+        }
+        #js-bar{
+            width: 0.9*$phone-bar;
+        }
+        #react-bar{
+            width: 0.8*$phone-bar;
+        }
+        #bootstrap-bar{
+            width: 0.85*$phone-bar;
+        }
+        #sass-bar{
+            width: 0.8*$phone-bar;
+        }
+        #english-bar{
+            width: 0.8*$phone-bar;
+        }
+    }
+    #all-projects{
+        padding-bottom: 0;
+        font-size: 1.4rem;
+        .projects{
+            width: $project-width*0.7;
+            height: $project-height*0.6;
+            margin-bottom: 80px;
+            img{
+                height: $project-height*0.48;
+            }
+            .project-name{
+                height: $project-height*0.12;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 770px) {
+    #all-projects{
+        padding-bottom: 0;
+        font-size: 1.3rem;
+        .projects{
+            width: $project-width*0.7;
+            height: $project-height*0.6;
+            .project-name{
+                height: $project-height*0.1;
+            }
+        }
+    }
+}
