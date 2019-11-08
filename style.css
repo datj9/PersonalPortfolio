@@ -12,11 +12,8 @@ a {
 }
 
 #welcome {
-  top: 0;
-  left: 0;
-  right: 0;
   height: 100vh;
-  background-image: url("newimg.jpg");
+  background-image: url("https://www.upsieutoc.com/images/2019/11/04/newimg.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -44,8 +41,6 @@ a {
   font-size: 1.7rem;
   width: 100%;
   margin: 0;
-  top: 0;
-  left: 0;
 }
 
 #nav-bar ul {
@@ -85,9 +80,6 @@ a {
 
 #skill {
   font-family: 'Comfortaa', cursive;
-  top: 100vh;
-  left: 0;
-  right: 0;
   font-size: 1.5rem;
   width: 100%;
   display: -webkit-box;
@@ -229,7 +221,6 @@ a {
 
 #work {
   top: 344vh;
-  right: 0;
   font-size: 1.9rem;
   margin: 20px auto;
   text-align: center;
@@ -255,8 +246,6 @@ a {
 
 #footer {
   font-size: 1.4rem;
-  right: 0;
-  top: 384vh;
   background: #ffca7b;
   width: 100%;
   left: 0;
