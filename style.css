@@ -16,9 +16,10 @@ a {
   left: 0;
   right: 0;
   height: 100vh;
-  background-image: url("newimg (1).jpg");
+  background-image: url("newimg.jpg");
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #welcome #welcome-text {
@@ -223,6 +224,7 @@ a {
   background: #81807d;
   margin-top: 0;
   padding-top: 13px;
+  font-size: 1.4rem;
 }
 
 #work {
@@ -358,4 +360,4 @@ a {
     height: 45px;
   }
 }
-/*# sourceMappingURL=PersonalPortfolio.css.map */
+/*# sourceMappingURL=style.css.map */
