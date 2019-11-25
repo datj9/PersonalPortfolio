@@ -9,30 +9,6 @@ body{
     font-family: 'Roboto', sans-serif;
     margin: 0;
 }
-a{
-    text-decoration: none;
-}
-#welcome{
-    height: 100vh;
-    background-image: url("https://www.upsieutoc.com/images/2019/11/04/newimg.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    #welcome-text{
-        font-family: 'Comfortaa', cursive;
-        font-size: 2rem;
-        text-align: center;
-        padding-top: 200px;
-        color: rgb(255, 255, 255);
-
-    }
-    #name{
-        margin:0;
-    }
-    #favorite{
-        margin-top: 20px;
-    }
-}
 #nav-bar{
     position: absolute;
     z-index: 2;
@@ -69,6 +45,27 @@ a{
         }
     }
 }
+#welcome{
+    height: 100vh;
+    background-image: url("https://www.upsieutoc.com/images/2019/11/04/newimg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    #welcome-text{
+        font-size: 2rem;
+        text-align: center;
+        padding-top: 200px;
+        color: rgb(255, 255, 255);
+
+    }
+    #name{
+        margin:0;
+    }
+    #favorite{
+        margin-top: 20px;
+    }
+}
+
 #skill{
     font-family: 'Comfortaa', cursive;
     font-size: 1.5rem;
@@ -219,6 +216,9 @@ a{
         position: fixed;
         bottom: 10px;
         right: 10px;
+}
+a{
+    text-decoration: none;
 }
 
 @media only screen and (max-width: 1100px) {

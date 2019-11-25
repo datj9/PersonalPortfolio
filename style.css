@@ -7,34 +7,6 @@ body {
   margin: 0;
 }
 
-a {
-  text-decoration: none;
-}
-
-#welcome {
-  height: 100vh;
-  background-image: url("https://www.upsieutoc.com/images/2019/11/04/newimg.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-#welcome #welcome-text {
-  font-family: 'Comfortaa', cursive;
-  font-size: 2rem;
-  text-align: center;
-  padding-top: 200px;
-  color: white;
-}
-
-#welcome #name {
-  margin: 0;
-}
-
-#welcome #favorite {
-  margin-top: 20px;
-}
-
 #nav-bar {
   position: absolute;
   z-index: 2;
@@ -57,7 +29,6 @@ a {
   margin: 0;
   padding: 8px 6px;
   text-align: center;
-  color: white;
 }
 
 #nav-bar ul li.left {
@@ -78,34 +49,45 @@ a {
   color: #b39d7e;
 }
 
+#welcome {
+  height: 100vh;
+  background-image: url("https://www.upsieutoc.com/images/2019/11/04/newimg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#welcome #welcome-text {
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 200px;
+  color: #ffca7b;
+}
+
+#welcome #name {
+  margin: 0;
+}
+
+#welcome #favorite {
+  margin-top: 20px;
+}
+
 #skill {
-  font-family: 'Comfortaa', cursive;
   font-size: 1.5rem;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 70px auto;
+  flex-direction: column;
+  margin: 20px auto;
 }
 
 #skill h2 {
-  font-family: 'Comfortaa', cursive;
   text-align: center;
 }
 
 #skill .row {
   text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   margin: 30px auto;
   position: relative;
 }
@@ -160,7 +142,6 @@ a {
 }
 
 #all-projects {
-  font-family: 'Comfortaa', cursive;
   padding: 20px 0 30px 0;
   width: 100%;
   background: #ffca7b;
@@ -172,13 +153,9 @@ a {
 }
 
 #all-projects #project-group {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 #all-projects #project-group a:link, #all-projects #project-group a:visited, #all-projects #project-group a:active {
@@ -193,13 +170,11 @@ a {
   width: 400px;
   height: 450px;
   position: relative;
-  -webkit-transition-duration: .3s;
-          transition-duration: .3s;
+  transition-duration: .3s;
 }
 
 #all-projects .projects:hover {
-  -webkit-transform: scale(1.1, 1.1);
-          transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
 }
 
 #all-projects .projects img {
@@ -225,7 +200,6 @@ a {
   margin: 20px auto;
   text-align: center;
   width: 100%;
-  font-family: 'Comfortaa', cursive;
 }
 
 #work a:link, #work a:active, #work a:visited {
@@ -235,13 +209,11 @@ a {
 #work .social-network {
   display: inline-block;
   margin: 20px;
-  -webkit-transition-duration: .2s;
-          transition-duration: .2s;
+  transition-duration: .2s;
 }
 
 #work .social-network:hover {
-  -webkit-transform: scale(1.1, 1.1);
-          transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
 }
 
 #footer {
@@ -261,16 +233,32 @@ a {
   position: fixed;
   bottom: 10px;
   right: 10px;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  background: orange;
+  border-radius: 50%;
 }
 
 #button a:link, #button a:active, #button a:visited {
-  color: black;
+  color: #ffffff;
 }
 
-#button a:hover {
-  background: #6e6d6d;
+#button:hover #up{
+  color: orange;
+}
+#button:hover{
+  background: white;
+  border: 1px solid orange;
 }
 
+a {
+  text-decoration: none;
+}
+.fa-angle-up{
+  position: relative;
+  bottom: 5px;
+}
 @media only screen and (max-width: 1100px) {
   #welcome {
     height: 70vh;
