@@ -8,7 +8,8 @@ body {
 }
 
 #nav-bar {
-  position: absolute;
+  position: fixed;
+  background: orange;
   z-index: 2;
   font-size: 1.7rem;
   width: 100%;
@@ -42,11 +43,11 @@ body {
 }
 
 #nav-bar ul a:link, #nav-bar ul a:visited, #nav-bar ul a:active {
-  color: #ffca7b;
+  color: #ffffff;
 }
 
 #nav-bar ul a:hover {
-  color: #b39d7e;
+  color: #92908d;
 }
 
 #welcome {
@@ -61,7 +62,7 @@ body {
   font-size: 2rem;
   text-align: center;
   padding-top: 200px;
-  color: #ffca7b;
+  color: white;
 }
 
 #welcome #name {
@@ -70,75 +71,6 @@ body {
 
 #welcome #favorite {
   margin-top: 20px;
-}
-
-#skill {
-  font-size: 1.5rem;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  margin: 20px auto;
-}
-
-#skill h2 {
-  text-align: center;
-}
-
-#skill .row {
-  text-align: center;
-  display: flex;
-  flex-direction: row;
-  margin: 30px auto;
-  position: relative;
-}
-
-#skill .row p {
-  margin: 0 30px;
-  width: 140px;
-  color: #ff9900;
-}
-
-#skill .full {
-  width: 660px;
-  height: 30px;
-  background: #948f8f;
-  border-radius: 25px;
-}
-
-#skill #html-bar, #skill #css-bar, #skill #js-bar, #skill #react-bar, #skill #bootstrap-bar, #skill #sass-bar, #skill #english-bar {
-  position: absolute;
-  left: 200px;
-  height: 30px;
-  background: #f3af48;
-  border-radius: 25px;
-}
-
-#skill #html-bar {
-  width: 627px;
-}
-
-#skill #css-bar {
-  width: 594px;
-}
-
-#skill #js-bar {
-  width: 594px;
-}
-
-#skill #react-bar {
-  width: 528px;
-}
-
-#skill #bootstrap-bar {
-  width: 561px;
-}
-
-#skill #sass-bar {
-  width: 528px;
-}
-
-#skill #english-bar {
-  width: 528px;
 }
 
 #all-projects {
@@ -195,7 +127,7 @@ body {
 }
 
 #work {
-  top: 344vh;
+  top: 345vh;
   font-size: 1.9rem;
   margin: 20px auto;
   text-align: center;
@@ -229,36 +161,39 @@ body {
 }
 
 #button {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: orange;
   font-size: 3rem;
   position: fixed;
   bottom: 10px;
   right: 10px;
-  width: 45px;
-  height: 45px;
   text-align: center;
-  background: orange;
-  border-radius: 50%;
+}
+
+#button:hover {
+  background: white;
+  border: 1px solid orange;
+  text-align: center;
+}
+
+#button a {
+  position: relative;
 }
 
 #button a:link, #button a:active, #button a:visited {
-  color: #ffffff;
+  color: white;
 }
 
-#button:hover #up{
-  color: orange;
-}
-#button:hover{
-  background: white;
-  border: 1px solid orange;
+#button a:hover {
+  background: orange;
 }
 
 a {
   text-decoration: none;
 }
-.fa-angle-up{
-  position: relative;
-  bottom: 5px;
-}
+
 @media only screen and (max-width: 1100px) {
   #welcome {
     height: 70vh;
@@ -271,41 +206,6 @@ a {
   }
   #nav-bar ul li.left {
     margin-left: 0;
-  }
-  #skill {
-    font-size: 1.4rem;
-  }
-  #skill .row p {
-    width: 100px;
-  }
-  #skill .full {
-    width: 400px;
-    height: 20px;
-  }
-  #skill #html-bar, #skill #css-bar, #skill #js-bar, #skill #react-bar, #skill #bootstrap-bar, #skill #sass-bar, #skill #english-bar {
-    left: 160px;
-    height: 20px;
-  }
-  #skill #html-bar {
-    width: 380px;
-  }
-  #skill #css-bar {
-    width: 360px;
-  }
-  #skill #js-bar {
-    width: 360px;
-  }
-  #skill #react-bar {
-    width: 320px;
-  }
-  #skill #bootstrap-bar {
-    width: 340px;
-  }
-  #skill #sass-bar {
-    width: 320px;
-  }
-  #skill #english-bar {
-    width: 320px;
   }
   #all-projects {
     padding-bottom: 0;

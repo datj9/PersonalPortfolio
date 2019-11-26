@@ -1,5 +1,5 @@
 let projects = document.getElementsByClassName("projects");
-let button = document.getElementsByClassName("fa-angle-up")[0];
+let button = document.getElementById("up");
 for (let i=0; i<projects.length; i++) {
 projects[i].addEventListener("mouseenter",function(event) {
 		let name = event.target.children[1].innerHTML;
@@ -22,4 +22,4 @@ function updown() {
 	}
 
 }
-setInterval(updown,80);
+setInterval(updown,70);
