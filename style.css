@@ -38,12 +38,8 @@ body {
   padding: 8px 6px;
 }
 
-#nav-bar ul a {
-  text-decoration: none;
-}
-
 #nav-bar ul a:link, #nav-bar ul a:visited, #nav-bar ul a:active {
-  color: #ffffff;
+  color: #fff;
 }
 
 #nav-bar ul a:hover {
@@ -85,28 +81,34 @@ body {
 }
 
 #all-projects #project-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 #all-projects #project-group a:link, #all-projects #project-group a:visited, #all-projects #project-group a:active {
-  color: #ffca7b;
+  color: black;
 }
 
 #all-projects #project-group a:hover {
-  color: #b39d7e;
+  color: orange;
 }
 
 #all-projects .projects {
   width: 400px;
   height: 450px;
   position: relative;
-  transition-duration: .3s;
+  -webkit-transition-duration: .3s;
+          transition-duration: .3s;
 }
 
 #all-projects .projects:hover {
-  transform: scale(1.1, 1.1);
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
 }
 
 #all-projects .projects img {
@@ -120,32 +122,37 @@ body {
   text-align: center;
   width: 100%;
   height: 50px;
-  background: #81807d;
+  background: #979797;
   margin-top: 0;
   padding-top: 13px;
   font-size: 1.4rem;
 }
 
 #work {
-  top: 345vh;
   font-size: 1.9rem;
   margin: 20px auto;
   text-align: center;
   width: 100%;
 }
 
-#work a:link, #work a:active, #work a:visited {
+#work a:link, #work a:visited, #work a:active {
+  color: black;
+}
+
+#work a:hover {
   color: black;
 }
 
 #work .social-network {
   display: inline-block;
   margin: 20px;
-  transition-duration: .2s;
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
 }
 
 #work .social-network:hover {
-  transform: scale(1.1, 1.1);
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
 }
 
 #footer {
@@ -182,8 +189,8 @@ body {
   position: relative;
 }
 
-#button a:link, #button a:active, #button a:visited {
-  color: white;
+#button a:link, #button a:visited, #button a:active {
+  color: #fff;
 }
 
 #button a:hover {
