@@ -48,7 +48,7 @@ body {
 
 #welcome {
   height: 100vh;
-  background-image: url("https://www.upsieutoc.com/images/2019/11/04/newimg.jpg");
+  background-image: url("../images/home.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
